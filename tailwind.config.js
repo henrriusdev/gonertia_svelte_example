@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './resources/**/*.{vue,js,ts,jsx,tsx}',
+    './resources/**/*.{svelte,tsx}',
     './resources/views/root.html'
   ],
   theme: {

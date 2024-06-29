@@ -1,5 +1,5 @@
-module vuego
+module svelgo
 
 go 1.22
 
-require github.com/romsar/gonertia v1.1.4 // indirect
+require github.com/romsar/gonertia v1.1.4

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import {svelte} from "@sveltejs/vite-plugin-svelte"
 import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
@@ -11,7 +11,7 @@ export default defineConfig({
             buildDirectory: 'bootstrap',
             refresh: true,
         }),
-        vue(),
+        svelte(),
     ],
     build: {
         ssr: true, // Habilitar SSR
