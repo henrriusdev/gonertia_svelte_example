@@ -17,7 +17,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        manifest: true, // Generar el manifest.json
+        manifest: true, // Generate manifest.json file
         outDir: 'public/build',
         rollupOptions: {
             input: 'resources/js/app.js',
@@ -25,7 +25,7 @@ export default defineConfig({
                 entryFileNames: 'assets/[name].js',
                 chunkFileNames: 'assets/[name].js',
                 assetFileNames: 'assets/[name].[ext]',
-                manualChunks: undefined, // Desactiva el hashing de nombres
+                manualChunks: undefined, // Disable automatic chunk splitting
             },
         },
     },
