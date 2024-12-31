@@ -5,8 +5,11 @@ createServer(page =>
     createInertiaApp({
         page,
         resolve: name => {
-            const pages = import.meta.glob('./Pages/**/*.svelte', { eager: true })
-            return pages[`./Pages/${name}.svelte`]
+          // @ts-expect-error
+          const pages = import.meta.glob("./Pages/**/*.svelte", {
+            eager: true,
+          });
+            return pages[`./Pages/${name}.svelte`];
         },
     }),
 )
