@@ -1,6 +1,6 @@
 # Gonertia Svelte Example
 
-This is a template for start using the [Golang Inertia Adapter](https://github.com/romsar/gonertia) using Svelte 4
+This is a template for start using the [Golang Inertia Adapter](https://github.com/romsar/gonertia) using Svelte 5
 
 Other template: [Vue Example w/ Gonertia](https://github.com/henrriusdev/gonertia_vue_example)
 

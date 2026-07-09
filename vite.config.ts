@@ -12,19 +12,18 @@ export default defineConfig({
     }),
     svelte({
       preprocess: [sveltePreprocess({typescript: true})],
-    }), 
+    }),
   ],
   build: {
     manifest: true, // Generate manifest.json file
     outDir: "public/build",
     emptyOutDir: true,
-    rollupOptions: {
+    rolldownOptions: {
       input: "resources/js/app.ts",
       output: {
         entryFileNames: "assets/[name].js",
         chunkFileNames: "assets/[name].js",
         assetFileNames: "assets/[name].[ext]",
-        manualChunks: undefined, // Disable automatic chunk splitting
       },
     },
   },

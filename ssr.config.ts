@@ -17,13 +17,12 @@ export default defineConfig({
   build: {
     ssr: true, // Enable SSR
     outDir: "bootstrap",
-    rollupOptions: {
+    rolldownOptions: {
       input: "resources/js/ssr.ts",
       output: {
         entryFileNames: "assets/[name].js",
         chunkFileNames: "assets/[name].js",
         assetFileNames: "assets/[name][extname]",
-        manualChunks: undefined, // Disable automatic chunk splitting
       },
     },
   },
