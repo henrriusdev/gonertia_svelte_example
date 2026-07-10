@@ -1,5 +1,5 @@
 module svelgo
 
-go 1.22
+go 1.26
 
-require github.com/romsar/gonertia v1.1.4
+require github.com/romsar/gonertia/v3 v3.0.0
